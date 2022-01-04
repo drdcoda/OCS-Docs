@@ -96,11 +96,11 @@
       - topicUid: gpAuthorizationCodeClient
 - name: Developer tools
   items:
-    name: API Console
-    name: OMF Editor
+    - name: API Console
+    - name: OMF Editor
 - name: Support
   items:
-    name: Logs
+    - name: Logs
 - name: Developer guide
   href: developer-guide/toc.yml
   topicHref:  developer-guide/dev-guide-introduction.md
