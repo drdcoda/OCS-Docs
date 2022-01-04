@@ -81,8 +81,8 @@
     - topicUid: Dataviews1
 - name: Security
   items:
-    - Identity providers
-    - Groups
+    - name: Identity providers
+    - name: Groups
     - topicUid: ccUsers
       items:
       - topicUid: gpUsers
@@ -96,11 +96,11 @@
       - topicUid: gpAuthorizationCodeClient
 - name: Developer tools
   items:
-    API Console
-    OMF Editor
+    name: API Console
+    name: OMF Editor
 - name: Support
   items:
-    Logs
+    name: Logs
 - name: Developer guide
   href: developer-guide/toc.yml
   topicHref:  developer-guide/dev-guide-introduction.md
