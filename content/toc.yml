@@ -46,7 +46,7 @@
     - topicUid: DeployConfig
     - topicUid: ManageConfigurations
   - name: PI to OCS (Preview)
-    href: connectors/pi-to-ocs/toc.yml
+    href: add-organize-data/collect-data/connectors/pi-to-ocs/toc.yml
     topicHref: connectors/pi-to-ocs/main-lp.md 
   - topicUid: lpomfoverview
     items:
