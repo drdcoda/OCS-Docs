@@ -31,7 +31,7 @@
       topicHref: communities/communities.md
     - topicUid: ccMetadataRules
       items:
-        topicUid: gpMetadataRules
+      - topicUid: gpMetadataRules
     - topicUid: AssetRulesCC
       items:
         - topicUid: CreateAssetRules
