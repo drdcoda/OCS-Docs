@@ -61,7 +61,7 @@
     - topicUid: ContextSwitch
     - topicUid: LegendTableReference
     - topicUid: URLparameters
-  - Asset explorer
+  - name: Asset explorer
     items:
     - topicUid: ccAssets
       items: 
@@ -76,10 +76,10 @@
       - topicUid: GetStartedROM
       - topicUid: FilterAssets
       - topicUid: ShareAViewOfYourFleet
-- Analytics
+- name: Analytics
   items:
     - topicUid: Dataviews1
-- Security
+- name: Security
   items:
     - Identity providers
     - Groups
