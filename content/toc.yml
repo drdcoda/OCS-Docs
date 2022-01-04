@@ -7,24 +7,103 @@
 - name: Get started
   href: overview/get-started/toc.yml
   topicHref: overview/get-started/gs-getting-started-intro.md
-- name: Set up the environment
+- name: Data management
   href: set-up/toc.yml
-  topicHref: set-up/set-up-overview.md
-- name: Add and organize data
-  href: add-organize-data/toc.yml
-  topicHref: add-organize-data/add-org-data-overview.md
-- name: Visualize data
+  items:
+    - topicUid: ccNamespaces
+      items:
+      - topicUid: bpNamespaces
+      - topicUid: gpNamespaces
+    - topicUid: lpstoredata
+      items:
+      - topicUid: ccStreams
+        items:
+        - topicUid: bpStreams
+        - topicUid: gpStreams
+        - topicUid: manage-streams
+      - topicUid: ccTypes
+        items:
+        - topicUid: bpTypes
+        - topicUid: gpTypes
+      - topicUid: ccStreamviews
+    - name: Communities (Preview)
+      href: communities/toc.yml
+      topicHref: communities/communities.md
+    - topicUid: ccMetadataRules
+      items:
+        topicUid: gpMetadataRules
+    - topicUid: AssetRulesCC
+      items:
+        - topicUid: CreateAssetRules
+        - topicUid: TokensGenerateAssets
+        - topicUid: UsingMultipleRules
+- topicUid: lpdatacollection
+  items:
+  - topicUid: SoftwareMgmt
+    items:
+    - topicUid: ViewEdgeSystem
+    - topicUid: AddBaseConfiguration
+    - topicUid: DeployConfig
+    - topicUid: ManageConfigurations
+  - name: PI to OCS (Preview)
+    href: connectors/pi-to-ocs/toc.yml
+    topicHref: connectors/pi-to-ocs/main-lp.md 
+  - topicUid: lpomfoverview
+    items:
+    - topicUid: bpOMFConnection
+    - topicUid: gpOMFConnection
+- topicUid: lpvisualizedata
   href: visualize-data/toc.yml
-  topicHref: visualize-data/visualize-data-overview.md
-- name: Remote operations monitoring
-  href: rom/toc.yml
-  topicHref: rom/rom-overview.md
-- name: Communities (Preview)
-  href: communities/toc.yml
-  topicHref: communities/communities.md
+  items:
+  - topicUid: TrendUserInterface
+    items:
+    - topicUid: GettingStartedWithTrendData
+    - topicUid: ContextSwitch
+    - topicUid: LegendTableReference
+    - topicUid: URLparameters
+  - Asset explorer
+    items:
+    - topicUid: ccAssets
+      items: 
+      - topicUid: CreateConfigureAsset
+      - topicUid: CreateAssetFromAssetType
+    - topicUid: AssetTypes
+      items:
+      - topicUid: CreateAssetTypeWithEditor
+      - topicUid: ConvertAssetToAssetType
+    - topicUid: lprom
+      items:
+      - topicUid: GetStartedROM
+      - topicUid: FilterAssets
+      - topicUid: ShareAViewOfYourFleet
+- Analytics
+  items:
+    - topicUid: Dataviews1
+- Security
+  items:
+    - Identity providers
+    - Groups
+    - topicUid: ccUsers
+      items:
+      - topicUid: gpUsers
+    - topicUid: ccRoles
+      items:
+      - topicUid: gpRoles
+    - topicUid: ccClients
+      items:
+      - topicUid: gpClientCredentialsClient
+      - topicUid: gpHybridClient
+      - topicUid: gpAuthorizationCodeClient
+- name: Developer tools
+  items:
+    API Console
+    OMF Editor
+- name: Support
+  items:
+    Logs
 - name: Developer guide
   href: developer-guide/toc.yml
-  topicHref: developer-guide/dev-guide-introduction.md
+  topicHref:  developer-guide/dev-guide-introduction.md
 - name: API reference
   href: api-reference/toc.yml
   topicHref: api-reference/ocs-api-reference.md
