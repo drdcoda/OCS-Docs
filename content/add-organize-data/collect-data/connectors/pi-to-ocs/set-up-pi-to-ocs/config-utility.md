@@ -21,7 +21,8 @@ The following image shows the important elements of the utility and table below 
 | 7  | Set data privacy options and assign an agent description.    |
 | 8  | View information about the server connection and its configuration. |
 | 9  | Source AF server name.                                        |
-| 10 | Type of AF mapping configured for the service account. Select the pencil icon next to this field to assign an AF mapping to an AF identity. |
+| 10 | Add an alternate display name for the AF server. This name will appear in the portal. Select the pencil icon next to this field to enter an alternative name. |
+| 11 | Type of AF mapping configured for the service account. Select the pencil icon next to this field to assign an AF mapping to an AF identity. |
 
    **Note:** After a PI Data Archive server is added, similar information in the table above is displayed in the utility.
 
@@ -68,6 +69,8 @@ To add an AF server, follow these steps:
    * IP address
 
    * Connection status and timeout
+
+1. (Optional) To have a different name than the AF server's default name displayed in the portal, select the pencil icon next to the **Alternative Display Name** field, then enter a different name. 
 
 1. (Optional) To change the length of time the agent checks for a server connection before timing out, select the pencil icon next to the **Connection Timeout** field.
 
