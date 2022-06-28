@@ -4,7 +4,7 @@ uid: operations-health
 ---
 
 # Health
-APIs related to querying OCS service health states
+APIs related to querying service health states
 
 ## `Get Tenant Health`
 
@@ -50,6 +50,13 @@ GET /api/v1/tenants/{tenantId}/health
         }
       ]
     }
+  ],
+  "Regions": [
+    {
+      "Region": "string",
+      "Name": "string",
+      "HealthState": 0
+    }
   ]
 }
 ```
@@ -72,6 +79,7 @@ This represents a view model of a TenantDbo
 |---|---|---|---|---|
 |HealthState|[State](#schemastate)|false|false|Health state of the tenant|
 |Namespaces|[[NamespaceViewModel](#schemanamespaceviewmodel)]|false|true|Namespaces scoped to this tenant|
+|Regions|[[RegionDto](#schemaregiondto)]|false|true|Features scoped to this tenant|
 
 ```json
 {
@@ -87,6 +95,13 @@ This represents a view model of a TenantDbo
           "HealthState": null
         }
       ]
+    }
+  ],
+  "Regions": [
+    {
+      "Region": "string",
+      "Name": "string",
+      "HealthState": 0
     }
   ]
 }
@@ -106,13 +121,13 @@ Represents the various health states a HealthEventViewModel can represent.
 
 #### Enumerated Values
 
-|Property|Value|
-|---|---|
-|Invalid|0|
-|Ok|1|
-|Warning|2|
-|Error|3|
-|Unknown|65535|
+|Property|Value|Description|
+|---|---|---|
+|Invalid|0|Represents the various health states a HealthEventViewModel can represent.|
+|Ok|1|Represents the various health states a HealthEventViewModel can represent.|
+|Warning|2|Represents the various health states a HealthEventViewModel can represent.|
+|Error|3|Represents the various health states a HealthEventViewModel can represent.|
+|Unknown|65535|Represents the various health states a HealthEventViewModel can represent.|
 
 ---
 
@@ -177,6 +192,34 @@ This represents a view model of a ServiceForTenantDbo
 
 ---
 
+### RegionDto
+
+<a id="schemaregiondto"></a>
+<a id="schema_RegionDto"></a>
+<a id="tocSregiondto"></a>
+<a id="tocsregiondto"></a>
+
+The health for a suite of services representing a Data Hub capability within a region.
+
+<h4>Properties</h4>
+
+|Property Name|Data Type|Required|Nullable|Description|
+|---|---|---|---|---|
+|Region|string|false|true|Region in which the services are located.|
+|Name|string|false|true|Name for the Data Hub capability facilitated by the region scoped services.|
+|HealthState|[State](#schemastate)|false|false|Health state of the region scoped services.|
+
+```json
+{
+  "Region": "string",
+  "Name": "string",
+  "HealthState": 0
+}
+
+```
+
+---
+
 ### ErrorResponse
 
 <a id="schemaerrorresponse"></a>
@@ -206,4 +249,3 @@ Object used to represent error information
 ```
 
 ---
-
